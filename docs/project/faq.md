@@ -27,7 +27,7 @@ SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
     -   [Why not Rust?](#why-not-rust)
         -   [If you can use Rust, ignore Carbon](#if-you-can-use-rust-ignore-carbon)
         -   [Why is adopting Rust difficult for C++ codebases?](#why-is-adopting-rust-difficult-for-c-codebases)
-    -   [Why not a garbage collected language, like Java, Kotlin, or Go?](#why-not-a-garbage-collected-language-like-java-kotlin-or-go)
+    -   [Why not a garbage collected language, like Java, C#, Kotlin, or Go?](#why-not-a-garbage-collected-language-like-java-c-kotlin-or-go)
 -   [How will Carbon work?](#how-will-carbon-work)
     -   [What compiler infrastructure is Carbon using?](#what-compiler-infrastructure-is-carbon-using)
     -   [How will Carbon's bidirectional C++ interoperability work?](#how-will-carbons-bidirectional-c-interoperability-work)
@@ -270,7 +270,7 @@ are incompatible with safe Rust. Specifically:
         [reference exclusivity](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html#the-rules-of-references)
         and stacked borrows rules.
 
-### Why not a garbage collected language, like Java, Kotlin, or Go?
+### Why not a garbage collected language, like Java, C#, Kotlin, or Go?
 
 If you can use one of these languages, you absolutely should.
 
@@ -316,7 +316,7 @@ to migration.
 Carbon's
 [generic programming](https://en.wikipedia.org/wiki/Generic_programming) support
 will handle both templates (matching C++) and checked generics (common in other
-languages: Rust, Swift, Go, Kotlin, Java, and so on).
+languages: Rust, Swift, Go, Kotlin, Java, C#, and so on).
 
 The key difference between the two is that template arguments can only finish
 type-checking _during_ instantiation, whereas generics specify an interface with
